@@ -1,0 +1,116 @@
+﻿body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #e6f7ff, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+/* Ensure the login card has a fixed width */
+.login-card {
+    width: 100%;
+    max-width: 400px; /* sets maximum width */
+    padding: 30px;
+    margin: 0 auto; /* center the card */
+    background: rgba(255,255,255,0.7);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    box-shadow: 0 0 20px #007bff55;
+    text-align: center;
+    box-sizing: border-box; /* include padding in width */
+}
+
+/* Input fields */
+.input-group input,
+.input-group select {
+    width: 100%; /* fills the card width */
+    max-width: 100%; /* prevent overflow */
+    padding: 12px 15px 12px 45px; /* leave space for icons */
+    border-radius: 12px;
+    border: 1px solid rgba(0,123,255,0.3);
+    background: rgba(255,255,255,0.6);
+    outline: none;
+    transition: all 0.3s ease;
+    box-sizing: border-box; /* ensures padding included in width */
+}
+
+
+    .login-card h2 {
+        margin-bottom: 30px;
+        color: #007bff;
+        text-shadow: 0 0 8px #007bff33;
+    }
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+    .input-group i {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-100%); /* keeps it centered */
+        color: #007bff;
+        font-size: 1.3rem;
+        opacity: 1;
+        filter: none;
+        z-index: 10;
+        
+    }
+   
+
+    /* Optional: add subtle glow for techy look */
+    .input-group i {
+        text-shadow: 0 0 4px #00bcd4, 0 0 8px #00bcd466;
+    }
+
+    .input-group input,
+    .input-group select {
+        width: 100%;
+        padding: 12px 15px 12px 45px;
+        border-radius: 12px;
+        border: 1px solid rgba(0,123,255,0.3);
+        background: rgba(255,255,255,0.6);
+        backdrop-filter: blur(5px);
+        outline: none;
+        transition: all 0.3s ease;
+    }
+
+        .input-group input:focus,
+        .input-group select:focus {
+            border-color: #00bcd4;
+            box-shadow: 0 0 10px #00bcd4aa;
+        }
+
+.hint {
+    display: block;
+    font-size: 0.8rem;
+    color: #007bffaa;
+    margin-top: 5px;
+    min-height: 18px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    background: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+    .login-btn:hover {
+        background: #00bcd4;
+        box-shadow: 0 0 15px #00bcd4aa;
+    }
