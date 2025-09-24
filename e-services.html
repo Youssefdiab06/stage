@@ -1,0 +1,143 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>E-Services</title>
+
+    <style>
+        :root {
+            --bg-dark: #0d1b2a;
+            --card-bg: #1b263b;
+            --white: #fff;
+            --gray: #ddd;
+            --radius: 14px;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Poppins", Arial, sans-serif;
+            background: var(--bg-dark);
+            color: var(--white);
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+
+        .card {
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            padding: 20px;
+            margin-bottom: 24px;
+            text-align: center;
+            box-shadow: 0 6px 12px blue;
+        }
+
+            .card img.logo {
+                width: 120px;
+                margin-bottom: 16px;
+            }
+
+            .card h2 {
+                margin: 0;
+                font-size: 20px;
+                font-weight: 500;
+            }
+
+
+        .store-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 16px;
+        }
+
+        .btn-store {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: var(--white);
+            color: #000;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 12px 14px;
+            border-radius: var(--radius);
+            transition: transform 0.2s;
+        }
+
+            .btn-store:hover {
+                transform: scale(1.03);
+            }
+
+            .btn-store img {
+                width: 20px;
+                height: 20px;
+            }
+
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 22px;
+            }
+
+            .card h2 {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>E-Services</h1>
+
+        <!-- Sehhati card -->
+        <div class="card">
+            <img src="https://via.placeholder.com/120x50?text=Sehhati" alt="Sehhati logo" class="logo">
+            <h2>Sehhati</h2>
+            <div class="store-buttons">
+                <a href="#" class="btn-store">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple">
+                    <span>Download now — App Store</span>
+                </a>
+                <a href="#" class="btn-store">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+                    <span>Download now — Play Store</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Seha card -->
+        <div class="card">
+            <img src="https://via.placeholder.com/120x50?text=Seha" alt="Seha logo" class="logo">
+            <h2>Seha</h2>
+        </div>
+
+        <!-- Anat card -->
+        <div class="card">
+            <img src="https://via.placeholder.com/120x50?text=Anat" alt="Anat logo" class="logo">
+            <h2>Anat</h2>
+        </div>
+    </div>
+
+    <script>
+ {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        alert('Redirecting to store...');
+      });
+    });
+    </script>
+</body>
+</html>

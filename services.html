@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="services.css">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Our Services</h1>
+        <div class="grid">
+            <div class="card" onclick="openModal('appointmentsModal')">
+                <i class="fa-solid fa-calendar-check fa-3x"></i>
+                <h2>Appointments</h2>
+                <p>Book a doctor at your preferred time.</p>
+            </div>
+            <div class="card" onclick="openModal('vaccinationsModal')">
+                <i class="fa-solid fa-syringe fa-3x"></i>
+                <h2>Vaccinations</h2>
+                <p>Stay updated with the latest vaccines.</p>
+            </div>
+            <div class="card" onclick="openModal('certificatesModal')">
+                <i class="fa-solid fa-file-medical fa-3x"></i>
+                <h2>Certificates</h2>
+                <p>Request medical certificates securely.</p>
+            </div>
+            <div class="card" onclick="openModal('prescriptionsModal')">
+                <i class="fa-solid fa-prescription-bottle-medical fa-3x"></i>
+                <h2>Prescriptions</h2>
+                <p>View and manage your prescriptions.</p>
+            </div>
+            <div class="card" onclick="openModal('reportsModal')">
+                <i class="fa-solid fa-file-waveform fa-3x"></i>
+                <h2>Reports</h2>
+                <p>Access and download medical reports.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Appointments Modal -->
+    <div id="appointmentsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Book an Appointment</h2>
+            <form>
+                <label for="doctor">Choose Doctor:</label>
+                <select id="doctor" required>
+                    <option>Dr. Smith</option>
+                    <option>Dr. Johnson</option>
+                    <option>Dr. Lee</option>
+                </select><br><br>
+                <label for="date">Date:</label>
+                <input type="date" id="date" required><br><br>
+                <label for="time">Time:</label>
+                <input type="time" id="time" required><br><br>
+                <button type="submit">Book Now</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Vaccinations Modal -->
+    <div id="vaccinationsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Vaccinations</h2>
+            <form>
+                <label for="vaccine">Choose Vaccine:</label>
+                <select id="vaccine" required>
+                    <option>COVID-19</option>
+                    <option>Flu</option>
+                    <option>Hepatitis B</option>
+                </select><br><br>
+                <label for="vaccineDate">Date:</label>
+                <input type="date" id="vaccineDate" required><br><br>
+                <button type="submit">Book Vaccine</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Certificates Modal -->
+    <div id="certificatesModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Request Certificate</h2>
+            <form>
+                <label for="certificateType">Type:</label>
+                <select id="certificateType" required>
+                    <option>Medical Leave</option>
+                    <option>Fitness Certificate</option>
+                </select><br><br>
+                <button type="submit">Request Certificate</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Prescriptions Modal -->
+    <div id="prescriptionsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Prescriptions</h2>
+
+            <!-- Prescriptions Table -->
+            <table id="prescriptionsTable">
+                <thead>
+                    <tr>
+                        <th>Patient Name</th>
+                        <th>Medicine</th>
+                        <th>Dosage</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>Amoxicillin</td>
+                        <td>500mg</td>
+                        <td>2025-09-11</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Add Prescription Button -->
+            <button class="add-prescription-btn" onclick="togglePrescriptionForm()">
+                + Add Prescription
+            </button>
+
+            <!-- Hidden Add Prescription Form -->
+            <form id="addPrescriptionForm" onsubmit="addPrescription(event)">
+                <input type="text" id="patientName" placeholder="Patient Name" required>
+                <input type="text" id="medicine" placeholder="Medicine" required>
+                <input type="text" id="dosage" placeholder="Dosage" required>
+                <input type="date" id="date" required>
+                <button type="submit">Save Prescription</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Reports Modal -->
+    <div id="reportsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Reports</h2>
+            <p>Your available reports will appear here.</p>
+            <button>Download Report</button>
+        </div>
+    </div>
+
+    <script src="services.js"></script>
+</body>
+</html>

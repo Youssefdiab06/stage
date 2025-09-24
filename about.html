@@ -1,0 +1,189 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+
+    <title>Health Clusters — Example</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            height: 100%;
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            color: blue;
+            background: white;
+        }
+
+
+        . {
+            max-width: 1200px;
+            margin: 32px auto;
+            padding: 28px;
+            display: grid;
+            grid-template-columns: 1fr 420px;
+            gap: 28px;
+            align-items: center;
+        }
+
+        {
+            font-size: 40px;
+            line-height: 1.05;
+            color: blue;
+            margin-bottom: 18px;
+            font-weight: 700;
+        }
+
+        {
+            font-size: 16px;
+            color: blue;
+            margin-bottom: 22px;
+            width: 640px;
+        }
+
+        {
+            font-size: 15px;
+            color: #5a5a5a;
+            margin-bottom: 22px;
+            line-height: 1.6;
+        }
+
+
+        {
+            list-style: none;
+            margin: 18px 0 28px 0;
+            padding-left: 0;
+        }
+
+        {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin: 10px 0;
+            color: blue;
+            font-size: 15px;
+        }
+
+        {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: white;
+            display: inline-flex;
+            align: center;
+            color: blue;
+            font-weight: 700;
+        }
+
+
+        {
+            display: flex;
+            gap: 12px;
+            margin-top: 6px;
+        }
+
+        {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 18px;
+            font-size: 14px;
+            border-radius: 28px;
+            border: 0;
+            cursor: pointer;
+        }
+
+        .btn.primary {
+            background: blue,white);
+            color: white;
+            box-shadow: 0 6px 16px;
+        }
+
+        {
+            background: transparent;
+            color: white;
+            border: 1px solid;
+        }
+
+
+        {
+            background: white;
+            border-radius: 16px;
+            padding: 18px;
+            box-shadow: 0 4px 18px;
+            display: flex;
+            align-items: center;
+        }
+
+        {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            display: block;
+        }
+
+
+        {
+            margin-top: 24px;
+            padding-top: 16px;
+            border-top: 1px solid;
+            color: white;
+            font-size: 13px;
+            text-align: left;
+        }
+
+
+        @media (max-width: 880px) {
+
+        {
+            grid-template-columns: 1fr;
+            padding: 18px;
+        }
+
+        {
+            order: -1;
+            margin-bottom: 14px;
+        }
+
+        {
+            font-size: 28px;
+        }
+        }
+    </style>
+</head>
+<body>
+
+    <main class="wrap" role="main">
+        <section class="content" aria-labelledby="pageTitle">
+            <h1 id="pageTitle">Within 20 health clusters, collaborative efforts to provide optimal healthcare.</h1>
+
+            <p class="lead">A health cluster is a corporatized integrated ecosystem that encompasses all healthcare facilities within a designated catchment area. The health clusters are responsible for the health and wellness of the population of their area, which extends beyond care to include prevention and awareness.</p>
+
+            <ul class="checklist" aria-label="Included facilities">
+                <li><span class="checkmark">✓</span> Primary Care Centers</li>
+                <li><span class="checkmark">✓</span> Hospitals</li>
+                <li><span class="checkmark">✓</span> Medical Cities/Specialized Hospitals</li>
+            </ul>
+
+            <div class="actions" role="group" aria-label="Actions">
+                <button class="btn primary" type="button">Read more about the clusters ↓</button>
+                <button class="btn ghost" type="button">Browse the clusters →</button>
+            </div>
+
+            <div class="fake-footer">
+                Example mockup — replicate the layout and copy from the provided photo. Image at right is used as illustration.
+            </div>
+        </section>
+
+        <aside class="photo-card" aria-label="Group photo">
+            <!-- Replace the src with the actual path where your image sits -->
+            <img src="c:\Users\hp\Downloads\about-clusters.webp" alt="Group photograph of people in traditional dress at an event" />
+        </aside>
+    </main>
+
+</body>
+</html>
