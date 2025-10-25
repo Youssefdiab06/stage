@@ -141,6 +141,40 @@ header {
     width: 300px;
     transition: transform 0.3s, box-shadow 0.3s;
 }
+/* 🔽 Responsive Services Section */
+@media (max-width: 768px) {
+    .service-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-item {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+    .card i {
+        font-size: 40px;
+        color: #0077b6;
+        margin-bottom: 15px;
+    }
+
+    .card h3 {
+        font-size: 22px;
+        margin-bottom: 10px;
+        color: #333333;
+    }
+
+    .card p {
+        font-size: 15px;
+        color: #666666;
+    }
+
+    .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
 
     .card i {
         font-size: 40px;
