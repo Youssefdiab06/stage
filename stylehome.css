@@ -301,6 +301,7 @@ header {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
+
     .timeline-step:hover {
         transform: translateY(-5px);
         box-shadow: 0 10px 20px rgba(0,0,0,0.15);
@@ -1014,3 +1015,20 @@ nav ul.nav-links {
     .btn-dashboard:hover {
         background-color: #0077b6; /* begamme2 when when we click */
     }
+/* ===== Dashboard Responsive ===== */
+@media (max-width: 768px) {
+    .dashboard-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        display: flex;
+        overflow-x: auto;
+        padding: 15px;
+    }
+
+    .main-content {
+        padding: 15px;
+    }
+}
